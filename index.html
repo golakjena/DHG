@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DHS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/responsive.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="https://use.typekit.net/sta1pbb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="DHS_logo"><a href="index.html"><img src="images/DHG_logo.png" alt=""></a></div>
+		<div class="headerRight">
+			<div class="addr">TownPlace Suits<br> Vidala, LA <span class="captionArrow"><img src="images/CaptionArrow.png" alt=""></span></div>
+			<a href="get-in-touch.html" class="btnGetInTouch">Get In Touch</a>
+		</div>
+		<a href="javascript:void(0);" class="mobileNav">&nbsp;</a>
+		<ul class="topNav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="company.html">Company</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+		</ul>
+	</div>
+	<div class="bannerCont clearfix">
+		<img src="images/homeBanner.jpg" alt="">
+		<div class="tabOuter clearfix">
+			<div class="tabInner clearfix">
+				<ul class="tabs clearfix">
+					<li><a href="company.html">Company</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="dvScrollDown clearfix">
+		<a class="scrollDown" href="#dvGetInTouch">Scroll Down</a>
+	</div>
+	<div id="dvGetInTouch" class="dvGetInTouch clearfix">
+		<div class="DHS_logo2"><img src="images/DHG_logo.png" alt=""></div>
+		<a href="get-in-touch.html" class="GetInTouch">Get In Touch</a>
+	</div>
+	<div class="homeContent clearfix">
+		<div class="homeContentRow clearfix">
+			<div class="homeContentCol img">
+				<img src="images/Rectangle4.png" alt="">
+			</div>
+			<div class="homeContentCol cntRight">
+				<div class="txtEffectLeft">
+					<h4>Our Moto</h4>
+					<p>Perfection is our Passion<br>Perfection is rarely achieved, but the pursuit of perfection makes us who we are.</p>
+				</div>
+			</div>
+		</div>
+		<div class="homeContentRow clearfix">
+			<div class="homeContentCol pos2 cntLeft">
+				<div class="txtEffectRight">
+					<h4>Mission Statement</h4>
+					<p>Our mission is to continue to strive for perfection and growth through the intellectual development of our team with an emphasis on accountability throughout our organization.</p>
+				</div>
+			</div>
+			<div class="homeContentCol pos1 img">
+				<img src="images/Rectangle4.png" alt="">
+			</div>
+		</div>
+		<div class="homeContentRow clearfix">
+			<div class="homeContentCol img">
+				<img src="images/Rectangle4.png" alt="">
+			</div>
+			<div class="homeContentCol cntRight">
+				<div class="txtEffectLeft">
+					<h4>Vision Statement</h4>
+					<p>Our vision is to become an industry leading hotel development and management organization built on the foundation of integrity.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mGetInTouch clearfix">
+		<a href="get-in-touch.html">Get in Touch</a>
+	</div>
+	<footer class="footer clearfix">
+		<p class="copyright"><span>Copyright &copy; 2017</span> <span>Desai Hotel Group.</span> All Rights Reserved.</p>
+		<p class="madeBy"><a href="http://myriann.com/" target="_blank">Made By Myriann</a></p>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/viewportchecker.js"></script> 
+	<script src="js/jquery.DHS.js"></script>
+	<script>
+		$(function(){
+			$(".scrollDown").on("click", function(){
+				var target = $(this).attr("href");
+				$('html,body').animate({
+					scrollTop: $(target).offset().top
+				}, 1000);
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

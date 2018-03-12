@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body, html { height:100%; width:100%;}
+form { height:100%; }
+body{ background:#fff; font-family:'europa', sans-serif; font-size:14px; line-height: normal; font-weight: 400;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+img { max-width: 100%; height: auto; border:0; width: auto\9; /* ie8 */}
+a{ text-decoration:none; outline:0; border:0;}
+a:hover, a:focus{ text-decoration: none; outline: 0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.clr{ clear:both;}
+.push { height:115px;}
+ul, li{ list-style-type:none; margin: 0;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; margin: 0; padding: 0;}
+table{ border-collapse:collapse;}
+.fLeft{ float:left;}
+.fRight{ float:right;}
+.alignRight{ text-align:right;}
+.alignLeft{ text-align:left;}
+.alignCenter{ text-align:center;}
+.positionRelative{ position:relative;}
+*{ box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;}
+a:hover, a:focus{ color: none !important; text-decoration: none; }
+
+::-webkit-input-placeholder {color: #000;}
+:-moz-placeholder { color: #000; opacity: 1;}
+::-moz-placeholder { color: #000; opacity:  1;}
+:-ms-input-placeholder { color: #000;}
+:placeholder-shown { color: #000;}
+p{ margin:0; }
+
+
+
+/********* Font Face ****************/
+/*
+Europa-Bold : font-weight: 700
+Europa-Light : font-weight: 300
+Europa-Regular : font-weight: 400
+*/
+
+/***
+Main CSS Rules
+***********/
+.header{ width: 100%; height: 74px; background: #fff; position: fixed; left: 0; top: 0; z-index: 9; box-shadow: 0 0 6px rgba(0,0,0,0.2);}
+.DHS_logo{ display: inline-block; width: 120px; float: left; margin: 10px 0 0 20px;}
+.DHS_logo a{ display: inline-block;}
+.DHS_logo a img{ vertical-align: top;}
+.headerRight{ display: inline-block; float: right; }
+.addr{ font-size: 16px; color: #ccc; display: inline-block; margin: 18px 20px 0 0; vertical-align: top; position: relative;}
+.captionArrow{ width: 25px; height: 12px; position: absolute; bottom: -18px; right: 10px; }
+.btnGetInTouch{ font-size: 16px; display: inline-block; background: #000000; color: #fff; padding: 26px 130px; vertical-align: top;}
+.btnGetInTouch:hover{color: #fff;}
+
+.mobileNav{ width: 68px; height: 68px; background: #000 url(../images/navBttn.jpg) center center no-repeat; float: right; position: relative; display: none;}
+.topNav{ position: fixed; width: 100%; height: 100%; background: #000; top: 68px; left: 0; z-index: 9; text-align: center; padding: 30px 0 0 0; display: none;}
+.topNav li{ display: block; font-size: 18px; text-transform: uppercase;}
+.topNav li a{ display: block; color: #fff; padding: 12px 0;}
+
+
+/***
+Index
+***/
+.bannerCont{ margin: 74px 0 0 0; position: relative; }
+.bannerCont > img{ width: 100%;}
+.tabOuter{ width: 100%; position: absolute; left: 0; bottom: -32px; padding: 0 60px; }
+.tabInner{ display: inline-block; background: #000000; }
+.tabs li{ display: inline-block; width: 200px; text-align: center; font-size: 18px; float: left;}
+.tabs li a{ display: block; color: #fff; padding: 22px 0; transition: all 0.3s linear; -moz-transition: all 0.3s linear; -webkit-transition: all 0.3s linear;}
+.tabs li a:hover, .tabs li a.activeTab{ background:#2B2A2A; }
+
+.dvScrollDown{ font-size: 18px; text-align: center; margin: 50px 0 0 0; padding: 30px 0 50px 0; color: #000;}
+.scrollDown{ display: inline-block; text-transform: uppercase; color: #000; background: url(../images/scrollArrow.png) bottom center no-repeat; padding: 0 0 25px 0;}
+.dvGetInTouch{ height: 70px; border-top: 1px #f3f3f3 solid; border-bottom: 1px #f3f3f3 solid; padding: 0 0 0 60px;}
+.DHS_logo2{ display: inline-block; float: left; width: 90px; margin: 13px 0 0 0;}
+.GetInTouch{ display: inline-block; float: right; background: #000; text-align: center; color: #fff; padding: 23px 120px; font-size: 16px; }
+
+.homeContent{ padding: 65px 60px; }
+.homeContentRow{ display: flex; -webkit-display:flex; align-items:center; -webkit-align-items:center; }
+.homeContentCol{ width: 50%; float: left; }
+.homeContentCol h4{ text-transform: uppercase; color: #000; font-weight: 700; font-size: 30px;}
+.homeContentCol p{ font-size: 24px; line-height: 32px; padding: 0 0 30px 0; font-weight: 300;}
+.homeContentCol.img{ background: #E4E4E4;}
+.homeContentCol.cntRight{ padding: 0 0 0 70px;}
+.homeContentCol.cntLeft{ padding: 0 70px 0 0;}
+.txtEffectLeft{ position: relative; }
+.txtEffectRight{ position: relative; }
+
+/***
+Company
+***/
+.btnOurTeam{ display: inline-block; background:#000; font-size: 14px; text-transform: uppercase; color: #fff; padding: 15px 60px; }
+.homeContent.company .homeContentCol h4{ font-size: 24px; text-transform: capitalize; padding: 0 0 10px 0;}
+.homeContent.company .homeContentCol p{ font-size: 18px; }
+.dvGetInTouch.topMargin{ margin: 90px 0 0 0; }
+
+/***
+Services
+***/
+.homeContent.services .homeContentRow{ align-items:stretch; -webkit-align-items:stretch; }
+.homeContent.services .homeContentCol.img{ background: #E4E4E4; }
+.homeContent.services .homeContentCol h4{ font-size: 24px; text-transform: capitalize; padding: 0 0 10px 0;}
+.homeContent.services .homeContentCol p{ font-size: 18px; }
+.homeContent.services .homeContentCol.cntLeft{ padding: 50px 70px 50px 0; }
+.homeContent.services .homeContentCol.cntRight{ padding: 50px 0 50px 70px; }
+
+.serviceTab{ width: 100%; display: none; padding: 0 0 10px 0;}
+.serviceTab li{ display: block; font-size: 18px; margin: 0 0 10px 0;}
+.serviceTab li a{ display: block; color: #000; text-align: center; padding: 12px 0; border:2px #000 solid;}
+.serviceTab li a:hover, .serviceTab li a.activeService{ background: #e4e4e4; border:2px #e4e4e4 solid; }
+.serviceImg{ display: none; margin: 0 0 30px 0;}
+.serviceImg img{ vertical-align: top; width: 100%;}
+
+/***
+Portfolio
+***/
+.dvPortfolio{ padding: 65px 60px; }
+.dvPortfolio h3{ text-align: center; font-size: 30px; line-height: 34px; color: #000; padding: 0 0 60px 0; font-weight: 700;}
+.dvPortfolioRow{ margin: 0 0 50px 0; }
+.portfolioCol{ width: 48%; }
+.portfolioImg img{ vertical-align: top; }
+.txtName{ padding: 10px 0 0 0; color: #000;}
+.txtName h5{ font-size: 20px; line-height: 26px;}
+.txtName h6{ font-size: 16px; line-height: 20px;}
+
+.portfolioTab{ width: 100%; padding: 30px 0 10px 0; display: none;}
+.portfolioTab li{ display: block; font-size: 18px; margin: 0 0 10px 0;}
+.portfolioTab li a{ display: block; color: #000; text-align: center; padding: 12px 0; border:2px #000 solid;}
+.portfolioTab li a:hover, .portfolioTab li a.activePortfolio{ background: #e4e4e4; border:2px #e4e4e4 solid; }
+
+
+/***
+Our Team
+***/
+.dvOurTeam{ padding:100px 0 150px 0; margin: 74px 0 0 0;}
+.ourteamLeft{ width: 100%; float: left;  transition: all 0.1s linear; -moz-transition: all 0.1s linear; -webkit-transition: all 0.1s linear;}
+.path{ width: 350px; height: 350px; border: 2px #000 solid; border-radius: 500px; -moz-border-radius: 500px; -webkit-border-radius: 500px; margin: 0 auto; position: relative;}
+.teamCont{ display: inline-block; position: absolute; }
+.teamCont.sunnyDesai{ left: 140px; top: -37px;}
+.teamCont.SwetaDesai{ left: 250px; top: 8px;}
+.teamCont.SunilDesai{ left: 303px; top: 123px;}
+.teamCont.MoneelSharma{ left: 266px; top: 243px;}
+.teamCont.NavketanDesai{ left: 163px; top: 299px;}
+.teamCont.ChintanDesai{ left: 42px; top: 277px;}
+.teamCont.SanketDesai{ left: -33px; top: 187px;}
+.teamCont.EliDell{ left: -37px; top: 79px;}
+.teamCont.QuaNiya{ left: 30px; top: -15px;}
+
+.txtTeam{ position: absolute; white-space: nowrap; cursor: pointer;}
+.txtTeam h4{ font-size: 14px; font-weight: 700;}
+.txtTeam h5{ font-size: 14px;}
+.txtTeam.sunnyDesai{ left: 0; bottom: 102%;}
+.txtTeam.SwetaDesai{ left: 90px; top: 10px;}
+.txtTeam.SunilDesai{ left: 90px; top: 30px;}
+.txtTeam.MoneelSharma{ left: 90px; top: 30px;}
+.txtTeam.NavketanDesai{ left: 20px; bottom: -60px;}
+.txtTeam.ChintanDesai{ left: -20px; bottom: -60px;}
+.txtTeam.SanketDesai{ right: 90px; top: 25px;}
+.txtTeam.EliDell{ right: 90px; top: 25px;}
+.txtTeam.QuaNiya{ right: 90px; top: 0px;}
+
+.teamImg{ 
+    width: 80px; 
+    height: 80px; 
+    cursor: pointer; 
+    transition: all 0.3s linear; 
+    -moz-transition: all 0.3s linear; 
+    -webkit-transition: all 0.3s linear; 
+    position: relative;
+}
+.teamImg.active{     
+    -webkit-animation: leaves 0.4s ease-in-out alternate;
+    animation: leaves 0.4s ease-in-out alternate;
+}
+
+@-webkit-keyframes leaves {
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes leaves {
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+    }
+}
+.activeArrow .txtTeam h4{ background: url(../images/activeArrow.png) right center no-repeat; display: inline-block; padding: 0 12px 0 0;}
+
+.ourteamRight{ width: 40%; float: left; padding: 50px 50px 0 50px; position: relative; display: none; transition: all 0.1s linear; -moz-transition: all 0.1s linear; -webkit-transition: all 0.1s linear; vertical-align: top;}
+.popClose{ position: absolute; right: 30px; top: 0;}
+.teamContent{ display: none; }
+.teamContent h4{ font-size: 24px; font-weight: 700; color: #000;}
+.teamContent h5{ font-size: 18px; color: #000; padding: 0 0 10px 0; }
+.teamContent p{ font-size: 18px; line-height: 24px; color: #666666; padding: 0 0 10px 0; }
+
+
+.mGetInTouch{ background: #000; padding: 30px 15px; display: none;}
+.mGetInTouch a{ display: block; color: #fff; font-size: 18px; text-align: center; border:2px #fff solid; padding: 15px 0;}
+
+
+.mOurTeam{ margin: 68px 0 0 0; padding: 50px 0 0 0; display: none;}
+.mTeamCont{ text-align: center; margin: 0 0 50px 0;}
+.mTxtTeam{ margin: 5px 0 0 0; }
+.mTxtTeam h4{ font-size: 20px;}
+.mTxtTeam h5{ font-size: 16px;}
+#modalImgCont{ text-align: center; padding: 0 0 10px 0;}
+#modalImgCont img{ vertical-align: top;}
+#modalContent{ text-align: center; }
+#modalContent h4{ font-size: 22px; font-weight: 700; padding: 0 0 5px 0;}
+#modalContent h5{ font-size: 18px; padding: 0 0 30px 0;}
+#modalContent p{ text-align: left; font-size: 16px; line-height: 22px; padding: 0 0 20px 0;}
+.btnClose{ position: absolute; right: 10px; top: 10px; display: inline-block; z-index: 999; }
+
+/***
+Get In Touch
+***/
+.dvContact{ margin: 64px 0 0 0; padding:80px 60px 60px 60px;}
+.address{ text-align: center; font-size: 22px; line-height: 32px; color: #000; }
+.formCont{ max-width: 650px; margin: 0 auto; margin-top:50px; }
+.frmRow{ margin: 0 0 20px 0; }
+.frmCol{ width: 48%; }
+.frmRow input[type="text"]{ width: 100%; background: #fff; border:1px #ccc solid; padding: 10px; outline: 0; color: #000; font-size: 16px; }
+.frmRow textarea{ width: 100%; height: 120px; background: #fff; border:1px #ccc solid; padding: 10px; outline: 0; color: #000; font-size: 16px; resize: none;}
+.btnSubmit{ display: inline-block; background: #000; font-size: 18px; color: #fff; padding: 12px 40px; outline: 0; border:0; cursor: pointer; }
+
+/***
+Footer
+***/
+.footer{ padding: 50px 30px; font-size: 18px; color: #95989A;}
+.copyright{ float: left; }
+.madeBy{ float: right; }
+.madeBy a{ color: #95989A;}
+
+
+
+

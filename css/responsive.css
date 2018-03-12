@@ -1,0 +1,98 @@
+@media (min-width:320px) and (max-width:767px){
+	.header{ height: 68px;}
+	.DHS_logo{ margin: 7px 0 0 0; }
+	.headerRight{ display: none; }
+	.mobileNav{ display: block; }
+
+	.bannerCont{ margin: 68px 0 0 0; }
+	.tabOuter{ position: relative; bottom: auto; left: auto; padding: 20px 15px;}
+	.tabInner{ display: block; }
+	.tabs{ border: 1px #E4E4E4 solid; }
+	.tabs li{ display: block; width: 100%; border-bottom: 1px #E4E4E4 solid; float: left;}
+	.tabs li:last-child{ border: 0;}
+	.tabs li a{ padding: 15px 0;}
+	.tabs li a:hover, .tabs li a.activeTab{ background: #fff; color: #000; }
+	.dvScrollDown{ display: none; }
+	.dvGetInTouch{ display: none; }
+	.homeContent{ padding: 0 15px; }
+	.homeContentRow{ flex-wrap: wrap; -webkit-flex-wrap:wrap; }
+	.homeContentCol{ width: 100%; margin: 0 0 30px 0; padding: 0;}
+	.homeContentCol.cntRight{ padding: 0; margin: 0; }
+	.homeContentCol h4{ font-size: 20px; }
+	.homeContentCol p{ font-size: 20px; line-height: 28px; }
+	.homeContentCol.cntLeft{ padding: 0; margin: 0; }
+	.homeContentRow .homeContentCol.pos2 { -webkit-box-ordinal-group: 2; -moz-box-ordinal-group: 2; -ms-flex-order: 2; -webkit-order: 2; order: 2;}
+  	.homeContentRow .homeContentCol.pos1 { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -ms-flex-order: 1; -webkit-order: 1; order: 1;}
+
+  	.homeContent.company .homeContentCol h4{ font-size: 20px; }
+  	.homeContentCol.cntRight.botPadding{ padding: 0 0 30px 0; }
+  	.btnOurTeam{ text-align: center; display: block; }
+	.noHeader{ display: none; }
+	.serviceTab{ display: block; }
+	.serviceImg{ display: block; }
+	.homeContent.services .homeContentCol.cntRight{ padding: 0; }
+	.homeContent.services .homeContentCol.cntLeft{ padding: 0; }
+	.homeContent.services .homeContentCol.botPadding.cntLeft{ padding: 0 0 30px 0; }
+	.homeContentCol.img.noImg{ display: none; }
+	.homeContent.services .homeContentCol{ display: none; }
+	
+	.dvPortfolio{ padding: 0 15px; margin: 68px 0 0 0;}
+	.bannerCont.portfolioBanner{ display: none; }
+	.portfolioTab{ display: block; }
+	.dvPortfolioRow{ margin: 0; }
+	.portfolioCol{ width: 100%; margin: 0 0 30px 0; text-align: center;}
+	.txtName{ padding:5px 0 0 0; }
+	.txtName h5{ font-size: 18px; }
+	.txtName h6{ font-size: 14px; }
+	.portfolioWrap{ display: none; }
+
+	.dvOurTeam{ display: none; }
+	.mOurTeam{ display: block; }
+	
+	.dvContact{ padding: 0; margin: 68px 0 0 0;}
+	.formCont{ max-width: 100%; padding: 0; margin: 0;}
+	.address{ color: #fff; font-size: 18px;}
+	.mForm{ background: #000; padding: 0 15px 30px 15px; }
+	.mForm.topPadding{ padding: 30px 15px;}
+	.frmRow{ margin: 0; margin: 0 0 20px 0;}
+	.frmCol{ width: 100%;}
+	.frmCol.topMargin{ margin: 20px 0 0 0;}
+	.frmRow input[type="text"]{ background: none; border:1px #fff solid; color: #fff;}
+	.frmRow textarea{ height: 200px; background: none; border:1px #fff solid;color: #fff;}
+	.submitBtnCont{ text-align: center; padding: 30px; }
+	.btnSubmit{ display: block; width: 100%; padding: 15px 0; }
+	::-webkit-input-placeholder {color: #fff;}
+	:-moz-placeholder { color: #fff; opacity: 1;}
+	::-moz-placeholder { color: #fff; opacity:  1;}
+	:-ms-input-placeholder { color: #fff;}
+	:placeholder-shown { color: #fff;}
+	
+
+	.mGetInTouch{ display: block; }
+  	.footer{ padding: 20px 15px; font-size: 14px; }
+  	.copyright{ width: 100%; text-align: center; }
+  	.copyright span{ display: block;}
+  	.madeBy{ width: 100%; float: left; text-align: center; margin: 20px 0 0 0; }
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+	.tabInner{ display: block; }
+	.tabs li{ width:calc(100%/3); width:-moz-calc(100%/3); width:-webkit-calc(100%/3); }
+	.btnGetInTouch{ padding: 26px 80px; }
+	.homeContent{ padding: 50px 30px; }
+	.homeContentCol.cntRight{ padding: 0 0 0 30px; }
+	.homeContentCol.cntLeft{ padding: 30px 30px 30px 0; }
+	.homeContentCol h4{ font-size: 22px; }
+	.homeContentCol p{ font-size: 20px; line-height: 24px; }
+	.homeContent.company .homeContentRow{ align-items:stretch; -webkit-align-items:stretch; }
+	.homeContent.company .homeContentCol.img{ background: #E4E4E4; }
+	.homeContent.company .homeContentCol.cntRight{ padding: 30px 0 30px 30px;}
+	.homeContent.services .homeContentCol.cntRight{ padding: 30px 0 30px 30px; }
+	.homeContent.services .homeContentCol.cntLeft{ padding: 30px 30px 30px 0; }
+	.dvPortfolio{ padding: 60px 30px; }
+	.ourteamLeft{ width: 100%;}
+	.ourteamRight{ display: none; }
+
+}
